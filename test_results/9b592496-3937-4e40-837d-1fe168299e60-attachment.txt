@@ -1,0 +1,37 @@
+Метод POST
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"768d75724d7d87a95bbfaaffa57cac15","scope":"APP","reference":"039af395d72dcefb393cdeb51f00f400039af395d72dcefb393cdeb51f00f400","id":"039af395d72dcefb393cdeb51f00f400"}
+Верно!, Статус код = 200
+200
+['status', 'place_id', 'scope', 'reference', 'id']
+Все поля присутствуют
+status Верен
+Метод GET
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=768d75724d7d87a95bbfaaffa57cac15
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Верно!, Статус код = 200
+['location', 'accuracy', 'name', 'phone_number', 'address', 'types', 'website', 'language']
+Все поля присутствуют
+address Верен
+Метод PUT
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Верно!, Статус код = 200
+Все поля присутствуют
+msg Верен
+Метод GET_PUT
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=768d75724d7d87a95bbfaaffa57cac15
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"Moscov , str Lenina , dom 77 RUS","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Верно!, Статус код = 200
+address Верен
+Метод DELETE
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Верно!, Статус код = 200
+Все поля присутствуют
+status Верен
+Метод GET_DELETE
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=768d75724d7d87a95bbfaaffa57cac15
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Верно!, Статус код = 404
+msg Верен
