@@ -1,11 +1,9 @@
 Документация Google Map API
-
-
- ``Метод POST``
-
-- Запрос:
-* Base URL: https://rahulshettyacademy.com
-* Resource: /maps/api/place/add/json
+```json
+Метод POST
+Запрос:
+Base URL: https://rahulshettyacademy.com
+Resource: /maps/api/place/add/json
 Параметр для всех запросов: key =qaclick123
 Body:
 { 
@@ -24,9 +22,7 @@ Body:
 "language": "French-IN"
  }
 
-
-
- - Ответ:
+ Ответ:
 Статус: 200. Запрос прошел успешно
 {
     "status": "OK",
@@ -38,15 +34,15 @@ Body:
 
 
 
+Метод GET
 
-``Метод GET``
+ Base URL: https://rahulshettyacademy.com
+ Resource: /maps/api/place/get/json
+ Параметр для запросов: key =qaclick123, place_id
 
-Base URL: https://rahulshettyacademy.com
-Resource: /maps/api/place/get/json
-Параметр для запросов: key =qaclick123, place_id
+ Ответ:
+ Статус: 200. Запрос прошел успешно
 
-- Ответ:
-Статус: 200. Запрос прошел успешно
 {
     "location": {
         "latitude": "-38.383494",
@@ -61,16 +57,16 @@ Resource: /maps/api/place/get/json
     "language": "French-IN"
 }
 
-Статус: 404. Ошибка, локация с таким place_id отсутствует
+ Статус: 404. Ошибка, локация с таким place_id отсутствует
 {
     "msg": "Get operation failed, looks like place_id  doesn't exists"
 }
 
 
 
-``Метод PUT``
+Метод PUT
 
-- Запрос:
+Запрос:
 Base URL: https://rahulshettyacademy.com
 Resource: /maps/api/place/update/json
 Параметр для запросов: key =qaclick123
@@ -81,9 +77,9 @@ Body:
 "key":"qaclick123" 
 }
 
-- Ответ:
+ Ответ:
 
-Статус: 200. Запрос прошел успешно
+ Статус: 200. Запрос прошел успешно
 {
     "msg": "Address successfully updated"
 }
@@ -91,29 +87,29 @@ Body:
 Статус: 404. Ошибка, локация с таким place_id отсутствует
 {
     "msg": "Update address operation failed, looks like the data doesn't exists"
+}
 
 
 
+Метод DELETE
+ Запрос:
 
-``Метод DELETE``
-- Запрос:
-
-Base URL: https://rahulshettyacademy.com
-Resource: /maps/api/place/delete/json
-Параметр для запросов: key =qaclick123
-Body:
+ Base URL: https://rahulshettyacademy.com
+ Resource: /maps/api/place/delete/json
+ Параметр для запросов: key =qaclick123
+ Body:
 { 
 "place_id":"928b51f64aed18713b0d164d9be8d67f" 
 }
 
-- Ответ:
+ Ответ:
 
 Статус: 200. Запрос прошел успешно
 {
     "status": "OK"
 }
 
-Статус: 404. Ошибка, локация с таким place_id отсутствует
+ Статус: 404. Ошибка, локация с таким place_id отсутствует
 {
     "msg": "Delete operation failed, looks like the data doesn't exists"
 }
