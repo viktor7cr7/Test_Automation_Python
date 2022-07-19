@@ -1,12 +1,11 @@
-
 Документация Google Map API
 
 
  ``Метод POST``
 
 - Запрос:
-Base URL: https://rahulshettyacademy.com
-Resource: /maps/api/place/add/json
+* Base URL: https://rahulshettyacademy.com
+* Resource: /maps/api/place/add/json
 Параметр для всех запросов: key =qaclick123
 Body:
 { 
